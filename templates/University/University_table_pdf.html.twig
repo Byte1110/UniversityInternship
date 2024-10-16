@@ -1,0 +1,19 @@
+<a>Homepage</a>
+
+{# ... #}
+<table>
+     <tr>
+     <td> <strong> Id </strong></td>
+     <td> <strong> Name  </strong></td>
+     <td> <strong> Alias  </strong></td>
+     <td> <strong> ParentId  </strong></td>
+     </tr>
+{% for element in elements %}
+    <tr>
+     <td> {{ element.Id }} </td>
+     <td> {{ element.Name }} </td>
+     <td> {{ element.Alias }} </td>
+     <td> {{ element.ParentId }} </td>
+     </tr>
+{% endfor %}
+</table>
